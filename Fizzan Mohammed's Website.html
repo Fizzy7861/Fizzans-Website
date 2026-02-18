@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#0b0f1a" />
+  <title>Fizzan Mohammed — CV</title>
+  <meta name="description" content="Fizzan Mohammed — Computer Science student in London. Open to part-time and full-time roles across technical, support, and operations." />
+
+  <style>
+    :root{
+      --bg:#0b0f1a;
+      --card:rgba(255,255,255,.06);
+      --line:rgba(255,255,255,.14);
+      --text:rgba(255,255,255,.92);
+      --muted:rgba(255,255,255,.72);
+      --accent:#76f7d4;
+      --max:980px;
+      --radius:18px;
+      --shadow:0 18px 60px rgba(0,0,0,.35);
+      --sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    }
+    @media (prefers-color-scheme: light){
+      :root{
+        --bg:#f7f8fc;
+        --card:rgba(0,0,0,.05);
+        --line:rgba(0,0,0,.12);
+        --text:rgba(10,12,16,.92);
+        --muted:rgba(10,12,16,.72);
+        --shadow:0 16px 50px rgba(15,18,28,.12);
+      }
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{
+      margin:0;
+      font-family:var(--sans);
+      color:var(--text);
+      
+      background:
+        radial-gradient(1200px 700px at 20% 0%, rgba(118,247,212,.08), transparent 55%),
+        radial-gradient(1200px 700px at 80% 0%, rgba(155,123,255,.06), transparent 55%),
+        radial-gradient(900px 500px at 50% 120%, rgba(0,0,0,.18), transparent 60%),
+        linear-gradient(180deg, rgba(255,255,255,.02), transparent 30%),
+        var(--bg);
+    }
+
+    a{ color:inherit; text-decoration:none; }
+    a:hover{ text-decoration:underline; text-underline-offset:3px; }
+
+    .wrap{ max-width:var(--max); margin:0 auto; padding:24px; }
+
+    header{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:linear-gradient(180deg, rgba(255,255,255,.08), transparent);
+      box-shadow:var(--shadow);
+      padding:22px;
+    }
+
+    .top{
+      display:flex;
+      gap:16px;
+      justify-content:space-between;
+      align-items:flex-start;
+      flex-wrap:wrap;
+    }
+
+    h1{ margin:0; font-size:34px; letter-spacing:-.02em; }
+    .title{ margin-top:6px; color:var(--muted); }
+    .meta{ margin-top:10px; color:var(--muted); font-family:var(--mono); font-size:12.5px; }
+
+    .actions{ display:flex; flex-wrap:wrap; gap:10px; align-items:center; }
+    .btn{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding:10px 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(0,0,0,.10);
+      cursor:pointer;
+      user-select:none;
+    }
+
+    main{ margin-top:16px; display:grid; gap:14px; }
+
+    .section{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      background:var(--card);
+      padding:18px;
+    }
+
+    .section h2{
+      margin:0 0 10px;
+      font-size:16px;
+      letter-spacing:.2px;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    .dot{ width:8px; height:8px; border-radius:50%; background:var(--accent); box-shadow:0 0 16px rgba(118,247,212,.35); }
+
+    p{ margin:0; color:var(--muted); line-height:1.65; }
+
+    .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap:14px; }
+    @media (max-width: 860px){ .grid2{ grid-template-columns:1fr; } }
+
+    ul{ margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.6; }
+    li{ margin:6px 0; }
+
+    .item{
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:14px;
+      background:rgba(0,0,0,.08);
+    }
+    .itemhead{ display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap; }
+    .itemhead b{ font-size:14.5px; }
+    .when{ color:var(--muted); font-family:var(--mono); font-size:12px; }
+    .where{ margin-top:4px; color:var(--muted); font-family:var(--mono); font-size:12px; }
+
+    .tagrow{ display:flex; flex-wrap:wrap; gap:8px; margin-top:10px; }
+    .tag{
+      border:1px solid var(--line);
+      border-radius:999px;
+      padding:6px 10px;
+      font-size:12.5px;
+      color:var(--muted);
+      background:rgba(255,255,255,.04);
+    }
+
+    footer{ color:var(--muted); text-align:center; padding:18px 0 30px; font-size:12.5px; }
+
+    /* Print-friendly */
+    @media print{
+      body{ background:#fff; }
+      :root{ --text:#111; --muted:#333; --line:#ddd; --card:#fff; --shadow:none; }
+      .btn{ display:none; }
+      header, .section, .item{ box-shadow:none !important; background:#fff !important; }
+      a{ text-decoration:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="top">
+        <div>
+          <h1>Fizzan Mohammed</h1>
+          <div class="title">Computer Science Student • Technical Generalist • Customer &amp; Operations Support</div>
+          <div class="meta">London, UK · <a href="mailto:Fizzmoham7861@gmail.com">Fizzmoham7861@gmail.com</a> · <a href="tel:+447895984326">+44 7895 984326</a></div>
+        </div>
+
+        <div class="actions" aria-label="Quick actions">
+          <a class="btn" href="mailto:Fizzmoham7861@gmail.com">✉ Email</a>
+          <a class="btn" href="tel:+447895984326">☎ Call</a>
+          <a class="btn" href="Fizzan-Mohammed-CV.pdf" download>⬇ Download My CV</a>
+          <!-- Optional: put your PDF next to index.html and rename the file below -->
+          <!-- <a class="btn" href="Fizzan-Mohammed-CV.pdf" download>⬇ Download PDF</a> -->
+          </div>
+      </div>
+
+      <div class="tagrow" aria-label="Availability">
+        <span class="tag">Open to part-time &amp; full-time</span>
+        <span class="tag">Open to technical &amp; non-technical roles</span>
+        <span class="tag">Fast learner • Calm under pressure</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="section" id="profile">
+        <h2><span class="dot"></span>Profile</h2>
+        <p>
+          Highly motivated and adaptable professional with a strong foundation in Computer Science and a track record of delivering results in fast-paced environments.
+          Equally confident in technical problem-solving and customer-facing work, with experience ranging from web/database projects to high-pressure crowd management.
+          I’m looking for opportunities where I can support teams, learn quickly, and deliver reliable outcomes.
+        </p>
+      </section>
+
+      <section class="section" id="skills">
+        <h2><span class="dot"></span>Skills</h2>
+        <div class="grid2">
+          <div class="item">
+            <div class="itemhead"><b>Technical</b><span class="when">Tools &amp; fundamentals</span></div>
+            <ul>
+              <li>SPSS, Microsoft Office Suite</li>
+              <li>Windows, macOS, Android, iOS</li>
+              <li>Web development, digital content creation</li>
+              <li>Project management tools, data visualization</li>
+              <li>Programming fundamentals, algorithm design</li>
+              <li>Database concepts, IT system evaluation</li>
+              <li>Computer architecture, networking &amp; cybersecurity principles</li>
+              <li>AI/IoT/Cloud awareness</li>
+            </ul>
+          </div>
+
+          <div class="item">
+            <div class="itemhead"><b>Professional</b><span class="when">How I work</span></div>
+            <ul>
+              <li>Problem-solving, computational &amp; critical thinking</li>
+              <li>Customer service, technical communication, presentations</li>
+              <li>Teamwork, leadership, task prioritisation &amp; delegation</li>
+              <li>Adaptability, resilience, accountability &amp; integrity</li>
+              <li>Conflict resolution, cultural awareness</li>
+              <li>Design thinking, innovation, evaluative thinking</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="experience">
+        <h2><span class="dot"></span>Work experience</h2>
+
+        <div class="item">
+          <div class="itemhead">
+            <b>Stadium Steward — Platinum Security Ltd</b>
+            <span class="when">Jun 2025 – Present</span>
+          </div>
+          <div class="where">London, England, UK</div>
+          <ul>
+            <li>Maintained safety and order for large-scale events; managed crowd flow and visitor assistance.</li>
+            <li>Provided clear guidance to thousands of visitors, improving customer satisfaction and smooth operations.</li>
+            <li>Adapted quickly in high-pressure situations; de-escalated issues using calm communication.</li>
+          </ul>
+        </div>
+
+        <div class="item" style="margin-top:12px;">
+          <div class="itemhead">
+            <b>Labour Worker — Private Job</b>
+            <span class="when">Jul 2023 – Nov 2023</span>
+          </div>
+          <div class="where">London, England, UK</div>
+          <ul>
+            <li>Executed construction, landscaping, and warehouse tasks; handled tools/machinery safely.</li>
+            <li>Worked effectively in a team to meet deadlines and changing requirements.</li>
+            <li>Strengthened time management and reliability in physically demanding environments.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section" id="projects">
+        <h2><span class="dot"></span>Projects</h2>
+        <div class="grid2">
+          <div class="item">
+            <div class="itemhead"><b>Educational Database Management System</b><span class="when">Database</span></div>
+            <p>Developed and managed databases for school clients and students, improving data organisation and accessibility.</p>
+          </div>
+          <div class="item">
+            <div class="itemhead"><b>Website Modernisation &amp; UX Enhancement</b><span class="when">Web</span></div>
+            <p>Redesigned and modernised existing websites to improve user experience, aesthetics, and core functionality.</p>
+          </div>
+          <div class="item">
+            <div class="itemhead"><b>Start-Up Website &amp; Digital Marketing</b><span class="when">Web / Digital</span></div>
+            <p>Built a website for a car repair/parts startup and supported social media and digital marketing strategy.</p>
+          </div>
+          <div class="item">
+            <div class="itemhead"><b>Support &amp; Customer Service</b><span class="when">Troubleshooting</span></div>
+            <p>Provided technical and customer support, resolving a wide range of issues with clear, structured communication.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="certifications">
+        <h2><span class="dot"></span>Certifications</h2>
+
+        <div class="item">
+          <div class="itemhead">
+            <b>Electronic Arts — Software Engineering Job Simulation</b>
+            <span class="when">Certificate: Nov 23, 2025</span>
+          </div>
+          <p>Completed practical tasks including: feature proposal, game object class creation, inventory system improvement, and live bugfixing.</p>
+          <div class="tagrow" aria-label="EA skills">
+            <span class="tag">Code Quality</span><span class="tag">Code Review</span><span class="tag">Communication</span><span class="tag">Data Structures</span><span class="tag">Feature Development</span><span class="tag">Game Development</span><span class="tag">OOP</span><span class="tag">Object-Oriented Design</span><span class="tag">Product Management</span>
+          </div>
+          <!-- Optional: upload your certificate PDF next to index.html and keep this filename -->
+          <!-- <div class="tagrow"><a class="btn" href="EA.pdf" target="_blank" rel="noopener">View certificate</a></div> -->
+        </div>
+
+        <div class="item" style="margin-top:12px;">
+          <div class="itemhead">
+            <b>British Airways — Data Science Job Simulation</b>
+            <span class="when">Certificate: Nov 25, 2024</span>
+          </div>
+          <p>Completed practical tasks including web scraping for company insights and predicting customer buying behaviour.</p>
+          <div class="tagrow" aria-label="British Airways skills">
+            <span class="tag">Assumption Development</span><span class="tag">Communication</span><span class="tag">Data Modelling</span><span class="tag">Data Science</span><span class="tag">Data Visualization</span><span class="tag">Infrastructure Planning</span><span class="tag">Machine Learning</span><span class="tag">PowerPoint</span>
+          </div>
+          <!-- Optional: <div class="tagrow"><a class="btn" href="British Airways.pdf" target="_blank" rel="noopener">View certificate</a></div> -->
+        </div>
+
+        <div class="item" style="margin-top:12px;">
+          <div class="itemhead">
+            <b>Red Bull — Off-Premise Sales Job Simulation</b>
+            <span class="when">Practical tasks: Feb 2026</span>
+          </div>
+          <p>Completed practical tasks including client analysis and client presentation.</p>
+          <div class="tagrow" aria-label="Red Bull skills">
+            <span class="tag">Data Analysis</span><span class="tag">Organizational Skills</span><span class="tag">Presentation Development</span><span class="tag">Presentation Skills</span><span class="tag">Written Communication</span>
+          </div>
+          <!-- Optional: <div class="tagrow"><a class="btn" href="Red Bull.pdf" target="_blank" rel="noopener">View certificate</a></div> -->
+        </div>
+      </section>
+
+      <section class="section" id="education">
+        <h2><span class="dot"></span>Education</h2>
+        <div class="item">
+          <div class="itemhead"><b>BSc Computer Science — Brunel University</b><span class="when">Sep 2023 – Present</span></div>
+          <div class="where">London, England, UK</div>
+          <p>Strengths: programming fundamentals, algorithms, databases, computer architecture, networking, cybersecurity awareness.</p>
+        </div>
+        <div class="item" style="margin-top:12px;">
+          <div class="itemhead"><b>Business &amp; Information Technology (Diploma) — Greenford High School</b><span class="when">Sep 2021 – Jun 2023</span></div>
+          <div class="where">London, England, UK</div>
+        </div>
+        <div class="item" style="margin-top:12px;">
+          <div class="itemhead"><b>GCSEs — Villiers High School</b><span class="when">Secondary Education</span></div>
+          <div class="where">London, England, UK</div>
+          <p>Including Mathematics, English, Computer Science, Biology, Chemistry, Physics, Geography, Art, Religious Education.</p>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <h2><span class="dot"></span>Contact</h2>
+        <p>
+          Email: <a href="mailto:Fizzmoham7861@gmail.com">Fizzmoham7861@gmail.com</a> · Phone: <a href="tel:+447895984326">+44 7895 984326</a>
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      Single-page CV website · Print-friendly <span style="font-family:var(--mono);">index.html</span>
+    </footer>
+  </div>
+
+  <script type="application/ld+json">
+    {
+      "@type": "Person",
+      "name": "Fizzan Mohammed",
+      "address": {"@type": "London": "UK"},
+      "email": "mailto:Fizzmoham7861@gmail.com",
+      "telephone": "+44 7895 984326",
+      "jobTitle": "Computer Science Student"
+    }
+  </script>
+</body>
+</html>
