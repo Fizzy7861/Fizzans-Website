@@ -4,16 +4,16 @@ Welcome to my professional repository. This project serves as a centralized hub 
 Repository Contents
 Fizzan-Mohammed-CV.pdf: My latest resume detailing my professional experience, skills, and education.
 
-/certificates: A collection of my professional credentials:
+Certificates: A collection of my professional credentials:
 
-/Software Engineering Job Simulation – Issued by Electronic Arts
+Software Engineering Job Simulation – Issued by Electronic Arts
 
-/Data Science Job Simulation – Issued by British Airways
+Data Science Job Simulation – Issued by British Airways
 
-/Off-Premise Sales Job Simulation – Issued by Red Bull
+Off-Premise Sales Job Simulation – Issued by Red Bull
 
-/I am currently open to new opportunities and expanding my skill set Please feel free to reach out!
+I am currently open to new opportunities and expanding my skill set Please feel free to reach out!
 
-/Phone: +447895984326
-/Email: Fizzmoham7861@gmail.com
-/Location London, England / United Kingdom
+Phone: +447895984326
+Email: Fizzmoham7861@gmail.com
+Location London, England / United Kingdom
