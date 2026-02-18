@@ -4,7 +4,7 @@ Welcome to my professional repository. This project serves as a centralized hub 
 Repository Contents
 Fizzan-Mohammed-CV.pdf: My latest resume detailing my professional experience, skills, and education.
 
-Certificates: A collection of my professional credentials:
+Certificates: A collection of my professional credentials
 
 Software Engineering Job Simulation – Issued by Electronic Arts
 
